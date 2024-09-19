@@ -12,10 +12,31 @@
     <link rel="stylesheet" href="./src/style/output/style.css">
     <!-- fontawesome link -->
     <script src="https://kit.fontawesome.com/7f4f6e1f8e.js" crossorigin="anonymous"></script>
+    <!-- index.js -->
+    <script src="./src/js/index.js"></script>
 </head>
 
-<body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+<body
+    class="flex justify-center items-center px-[4rem] bg-[url('https://4kwallpapers.com/images/walls/thumbs_3t/18688.jpg')] bg-cover bg-center bg-no-repeat">
+    <form action=""
+        class="flex flex-col justify-center items-center px-4 py-2 w-full h-[80vh] bg-white/20 backdrop-blur-sm rounded-md shadow-[0_5px_6px_-10px_rgba(225,225,225,0.3)]">
+        <button type="button"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-0 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2  focus:outline-none focus:bg-black" onclick="displayUser()">Generate</button>
+
+        <div class="hidden items-center px-5 gap-5 w-[50rem] py-0 rounded-md bg-white transition-all ease-linear duration-150" id="card">
+            <div class="w-[10rem] h-[10rem] rounded-full flex justify-center items-center">
+                <i class="fa-solid fa-user text-[5rem]"></i>
+            </div>
+            <div class="flex flex-col">
+                <h2 class="font-semibold text-[30px]" id="username">#username</h2>
+                <span class="text-[20px]" id="nameU">name</span>
+                <span class="flex gap-4"> <span id="email">email: emailaddress</span>
+                    <span id="phone">Phone: 7012258680</span></span>
+            </div>
+        </div>
+
+
+    </form>
     <!-- flowbit Script link  -->
     <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
 </body>
